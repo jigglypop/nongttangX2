@@ -4,7 +4,7 @@ from functools import reduce
 
 def he_is_comming(second):
     time.sleep(1)
-    print(f"아이디얼 그라운드 행장님 오시기 {second}초 전")
+    print(f"마우스 이벤트 시작 {second}초 전")
     return
     
 def init(second, isAllowMoving):
