@@ -4,6 +4,8 @@ _마치 고양이처럼 퇴근하고 오면 자동으로 다 들어져 있는 �
 
 ![](https://images.mypetlife.co.kr/content/uploads/2019/12/09151959/%EC%8B%AC%EC%8B%AC%ED%95%9C_%EA%B3%A0%EC%96%91%EC%9D%B42.png)
 
+![IzLmo84UQg10xLdWQeK45JJ9bXgU](https://user-images.githubusercontent.com/52653682/157766102-a6321b70-ba3d-4ea6-b904-8a25b3412fae.gif)
+
 #### 사용법
 
 **주의 : 파이썬이 설치되어 있지 않으면 귀찮을 수 있습니다**
