@@ -8,7 +8,7 @@ def he_is_comming(second):
     return
     
 def init(second, isAllowMoving):
-    list(map(he_is_comming, [i for i in reversed(range(second))]))
+    list(map(he_is_comming, [i + 1 for i in reversed(range(second))]))
     print("자동클릭 이벤트가 시작되었습니다. 마우스를 움직이면 자동으로 중지됩니다")
     before = pg.position() 
     while True:
@@ -19,4 +19,4 @@ def init(second, isAllowMoving):
             break
         pg.click() 
 
-init(5, True)
+init(10, True)
