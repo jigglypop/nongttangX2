@@ -12,7 +12,8 @@ def get_im_ji_sungs_legacy():
     return "".join(f.readlines())  
 
 def step(callback):
-    time.sleep(1)
+    time.sleep(0.5)
+    print("hello")
     callback
 
 def im_ji_sungs_legacy():
@@ -22,6 +23,12 @@ def im_ji_sungs_legacy():
         pp.copy(text),
         pg.hotkey('ctrl', 'v'),
         pg.press('enter'),
+        pg.move(-500, 0, duration=0.5),
+        pg.click(),
+        pg.press('enter'),
+        pg.press('enter'),
+        pg.move(500, 0, duration=0.5),
+        pg.click(),
     ]
     list(map(step, func_step))
 
@@ -35,6 +42,9 @@ def init(second, isAllowMoving):
         if before != after and isAllowMoving:
             print("자동클릭이 중지되었습니다")
             break
+        # 건너뛰기 사용
         im_ji_sungs_legacy() 
+        # 그냥 클릭 사용
+        # pg.click()
 
-init(5, False)
+init(5, True)
