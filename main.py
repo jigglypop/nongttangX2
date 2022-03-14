@@ -13,7 +13,6 @@ def get_im_ji_sungs_legacy():
 
 def step(callback):
     time.sleep(0.5)
-    print("hello")
     callback
 
 def im_ji_sungs_legacy():
