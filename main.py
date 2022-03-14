@@ -22,11 +22,6 @@ def im_ji_sungs_legacy():
         pp.copy(text),
         pg.hotkey('ctrl', 'v'),
         pg.press('enter'),
-        pg.move(-1500, 0),
-        pg.click(),
-        pg.press('enter'),
-        pg.move(1500, 0),
-        pg.click(),
     ]
     list(map(step, func_step))
 
