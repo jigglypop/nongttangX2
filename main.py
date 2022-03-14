@@ -41,7 +41,8 @@ def init(second, isAllowMoving):
         if before != after and isAllowMoving:
             print("자동클릭이 중지되었습니다")
             break
-        # 건너뛰기 사용
+        # 아래 두 함수 중 택 1
+        # 건너뛰기 사용()
         im_ji_sungs_legacy() 
         # 그냥 클릭 사용
         # pg.click()
