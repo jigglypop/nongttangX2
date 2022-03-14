@@ -1,12 +1,35 @@
 import pyautogui as pg
+import pyperclip as pp
 import time
-from functools import reduce
 
 def he_is_comming(second):
     time.sleep(1)
     print(f"마우스 이벤트 시작 {second}초 전")
     return
-    
+
+def get_im_ji_sungs_legacy():
+    f = open('./im_ji_sung.js', 'r')
+    return "".join(f.readlines())  
+
+def step(callback):
+    time.sleep(1)
+    callback
+
+def im_ji_sungs_legacy():
+    text = get_im_ji_sungs_legacy()
+    func_step = [
+        pg.click(),
+        pp.copy(text),
+        pg.hotkey('ctrl', 'v'),
+        pg.press('enter'),
+        pg.move(-1500, 0),
+        pg.click(),
+        pg.press('enter'),
+        pg.move(1500, 0),
+        pg.click(),
+    ]
+    list(map(step, func_step))
+
 def init(second, isAllowMoving):
     list(map(he_is_comming, [i + 1 for i in reversed(range(second))]))
     print("자동클릭 이벤트가 시작되었습니다. 마우스를 움직이면 자동으로 중지됩니다")
@@ -17,6 +40,6 @@ def init(second, isAllowMoving):
         if before != after and isAllowMoving:
             print("자동클릭이 중지되었습니다")
             break
-        pg.click() 
+        im_ji_sungs_legacy() 
 
-init(10, True)
+init(5, False)
