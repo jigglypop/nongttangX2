@@ -1,6 +1,12 @@
-### 농땡농땡
+# 농땡농땡
 
-_마치 고양이처럼 퇴근하고 오면 자동으로 다 들어져 있는 프로그램_
+~~마치 고양이처럼 퇴근하고 오면 자동으로 다 들어져 있는 프로그램~~
+
+__빨래 널고 오면 다 들어져 있는 프로그램__
+
+__단, 불안하면 아래의 주석처리된 클릭 이벤트를 사용하세요__
+
+### 임지성님의 자동 스킵기능을 추가했습니다. 기여에 감사드립니다
 
 ![](https://images.mypetlife.co.kr/content/uploads/2019/12/09151959/%EC%8B%AC%EC%8B%AC%ED%95%9C_%EA%B3%A0%EC%96%91%EC%9D%B42.png)
 
@@ -12,23 +18,19 @@ _마치 고양이처럼 퇴근하고 오면 자동으로 다 들어져 있는 �
 
 0. 파이썬 설치
 
-1. 블루스택 등 핸드폰 가상화 프로그램 아무거나 설치(아래는 블루스택 주소)
+1. nh-tong 로그인
 
-https://www.bluestacks.com/ko/index.html?utm_campaign=aw-ded-AndroidonPC-ko-kr-s-1&gclid=Cj0KCQjwsYb0BRCOARIsAHbLPhFoC1MkYlkziNvG9Yd12MOL8SXv6yCbdVFQxpanqelUy3CsVGCPfJwaAkOzEALw_wcB
-
-2. 블루스택 로그인 후 블루스택 내의 **크롬 주소창**에 받은 android용 apk 받아서 블루스택 가상머신 내에 강의 앱 설치( 보안상 링크는 생략합니다 )
-
-3. venv(파이썬 가상환경 만들기)
+2. venv(파이썬 가상환경 만들기)
 
     ```bash
      python -m venv venv
     ```
 
-4. 가상환경 실행
+3. 가상환경 실행
     ```bash
     source ./venv/Scripts/activate
     ```
-5. requirements.txt 자동 설치
+4. requirements.txt 자동 설치
 
     ```bash
     pip3 install -r requirements.txt
@@ -41,9 +43,11 @@ https://www.bluestacks.com/ko/index.html?utm_campaign=aw-ded-AndroidonPC-ko-kr-s
     pip3 freeze > requirements.txt
     ```
 
-6. 모바일과 같이 로그인 후 동영상 킴
+5. 로그인 후 ctrl + shift + i 를 켜고 다음 위치에 마우스를 올려놓고 화면을 반반으로 다음과 같이 세팅한다
+![사본 -제목 없음](https://user-images.githubusercontent.com/52653682/158211115-69b6dc3d-425e-4102-b2d1-9b07c3152036.png)
 
-7. 모바일에 다음 동영상으로 가는 버튼 위치에 비슷하게 마우스를 올려놓고 매크로 실행
+
+6. 프로그램 실행 후 딜레이에 맞게 빠르게 마우스를 가져다 놓는다
 
     ```bash
     python ./main.py
@@ -59,4 +63,4 @@ https://www.bluestacks.com/ko/index.html?utm_campaign=aw-ded-AndroidonPC-ko-kr-s
 
     ```
 
-8. 출근
+7. 밀린 빨래를 한다
