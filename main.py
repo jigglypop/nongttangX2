@@ -7,16 +7,16 @@ def he_is_comming(second):
     print(f"마우스 이벤트 시작 {second}초 전")
     return
 
-def get_im_ji_sungs_legacy():
-    f = open('./im_ji_sung.js', 'r')
+def get_skip_py():
+    f = open('./skip.js', 'r')
     return "".join(f.readlines())  
 
 def step(callback):
     time.sleep(0.5)
     callback
 
-def im_ji_sungs_legacy():
-    text = get_im_ji_sungs_legacy()
+def skip_py():
+    text = get_skip_py()
     func_step = [
         pg.click(),
         pp.copy(text),
@@ -43,7 +43,7 @@ def init(second, isAllowMoving):
             break
         # 아래 두 함수 중 택 1
         # 건너뛰기 사용()
-        im_ji_sungs_legacy() 
+        skip_py() 
         # 그냥 클릭 사용
         # pg.click()
 
